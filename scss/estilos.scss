@@ -1,0 +1,17 @@
+/*Estilos principales de css*/
+/*Import de css de Bootstrap*/
+$body-color: #797878;
+$standard: 10px;
+@mixin grid ($column,$rgap){
+    grid-template-columns: $column;
+    row-gap: $rgap;
+};
+@import "bootstrap/bootstrap";
+@import "_components.scss";
+@import "_layout.scss";
+
+
+
+
+
+

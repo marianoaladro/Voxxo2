@@ -1,0 +1,142 @@
+/*aca vienen los grids para la pagina de render*/
+
+.render-container{
+    display: grid;
+    grid-template-areas: 
+    "img6       img6       img3"
+    "img4       img4       img5"
+    "img1       img2       img7";
+    grid-template-rows: repeat(3, 1fr);
+    @include grid(repeat(3, 1fr), ($standard*2) );
+    
+    grid-column-gap: $standard*2;
+
+    
+
+
+.img1{
+    grid-area: img1;
+}
+
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.render__imagen{
+    display: flex;
+    background-color: green;
+
+}
+}
+
+
+/*Tamaño de la imagenes*/
+.Imagen {
+    width: 100%;
+    height: 100%;
+}
+
+/*Pagina Manifesto*/
+.manifesto-contenedor{
+    margin: $standard;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-gap: $standard;
+    grid-template-areas: "foto texto texto" ;
+
+.manifiesto-img-contenedor{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.manifesto-Imagen{
+    @extend .manifiesto-img-contenedor;
+    grid-area: foto;
+    width: ($standard*30);
+    margin: ($standard*10);
+
+}
+
+.manifesto-Texto{
+    grid-area: texto;
+    padding:  $standard;
+    border-color: #aaaaaa;
+    border-width: 1px;
+    border-style: solid;
+}
+h3{
+    text-align: center;
+    }
+}
+
+/*media queries*/
+@media screen and (max-width:900px){
+    .render-container{
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img4"
+        "img5"
+        "img6"
+        "img7";
+        grid-template-rows: repeat(7, 1fr);
+        @include grid(100%,$standard );
+    }
+    .manifesto-contenedor{
+        display: grid;
+        grid-template-areas:
+        "foto"
+        "texto";
+       
+        grid-template-columns: 100%;
+        grid-row-gap: $standard;
+    }
+}
+
+@media screen and (max-width:600px){
+    .linkNav{
+        font-size: 1.3rem;
+    }    
+}
+
+@media screen and (max-width:500px){ 
+    
+    .header{
+        display: flex;
+    }
+    .linkNav{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:400px){ 
+
+    .linkNav{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:350px){ 
+
+    .linkNav{
+        font-size: 0.7rem;
+    }
+}
