@@ -7508,6 +7508,9 @@ textarea.form-control-lg {
   padding: 0;
   box-sizing: border-box; }
 
+main {
+  min-height: 100vh; }
+
 body {
   background-color: #797878;
   color: white;
@@ -7537,6 +7540,11 @@ nav a {
 
 .footer {
   margin: 0; }
+
+.enviarBtn {
+  background-color: black;
+  padding: 15px;
+  border-color: white; }
 
 .logoVoxxo {
   width: 200px; }

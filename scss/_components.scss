@@ -3,12 +3,14 @@
     box-sizing: border-box;
     
 }
-
+main{
+    min-height: 100vh;
+}
 body{
     background-color: $body-color;
     color: white ;
     font-family: 'Rubik', sans-serif;
-    
+   
 }
 
 header{
@@ -39,7 +41,11 @@ a { color: white; text-decoration: none; }
     margin: 0;
 }
 
-
+.enviarBtn{
+    background-color: black;
+    padding: 15px;
+    border-color: white;
+}
 .logoVoxxo {
     width: 200px;
 }
